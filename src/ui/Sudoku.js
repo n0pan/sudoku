@@ -33,6 +33,7 @@ export default class Sudoku extends Component {
 
   render() {
     return <div>
+      <Header>Sudoku</Header>
       {this.state.grid.map((row) => {
         return (
           <div>
@@ -48,9 +49,16 @@ export default class Sudoku extends Component {
   }
 }
 
+const Header = styled.h1`
+  font-size: 3.5rem;
+  font-family: 'Merriweather', serif;
+  letter-spacing: 3px;
+`
+
 const Cell = styled.div`
-  padding: 5px 10px;
+  padding: 10px 15px;
   width: fit-content;
   display: inline-block;
-  border: 1px solid grey;
+  border: 1px solid rgba(0,0,0,0.1);
+  background-color: white;
 `
