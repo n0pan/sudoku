@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import styled from 'styled-components'
 
 const MAX_LENGTH = 9
-export default class Sudoku extends Component {
+export default class Grid extends Component {
   constructor() {
     super()
     this.state = {

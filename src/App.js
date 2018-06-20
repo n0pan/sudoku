@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
-import Sudoku from './ui/Sudoku'
+import Grid from './ui/Grid'
 
 export default class App extends Component {
   render() {
     return <SudokuContainer>
-      <Sudoku />
+      <Grid />
     </SudokuContainer>
   }
 }
