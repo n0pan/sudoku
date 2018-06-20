@@ -1,10 +1,16 @@
 import React, { Component } from 'react'
+import styled from 'styled-components'
 import Sudoku from './ui/Sudoku'
 
 export default class App extends Component {
   render() {
-    return <div style={{ textAlign: 'center' }}>
+    return <SudokuContainer>
       <Sudoku />
-    </div>
+    </SudokuContainer>
   }
 }
+
+const SudokuContainer = styled.div`
+  text-align: center;
+  margin-top: 10%;
+`
